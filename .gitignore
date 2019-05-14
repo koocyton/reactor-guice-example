@@ -5,10 +5,18 @@
 
 # IntelliJ IDEA project files and directories
 *.iml
+*/*.iml
+
 *.ipr
+*/*.ipr
 *.iws
+*/*.iws
+
 .idea/
+*/.idea/
+
 .gradle/
+*/.gradle/
 
 # Geany project file
 .geany
