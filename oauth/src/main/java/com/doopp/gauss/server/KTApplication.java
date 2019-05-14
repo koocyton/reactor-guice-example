@@ -1,5 +1,6 @@
 package com.doopp.gauss.server;
 
+import com.doopp.gauss.server.json.MyGsonHttpMessageConverter;
 import com.doopp.reactor.guice.ReactorGuiceServer;
 import com.doopp.reactor.guice.json.GsonHttpMessageConverter;
 import com.github.pagehelper.PageInterceptor;
@@ -54,7 +55,7 @@ public class KTApplication {
         ReactorGuiceServer.create()
                 .bind(host, port)
                 .injector(injector)
-                .setHttpMessageConverter(new GsonHttpMessageConverter())
+                .setHttpMessageConverter(new MyGsonHttpMessageConverter())
                 .handlePackages("com.doopp.gauss.oauth.handle")
                 .addFilter("/", AppFilter.class)
                 .launch();

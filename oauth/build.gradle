@@ -7,14 +7,16 @@ apply plugin: 'application'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenLocal()
-    jcenter()
-    mavenCentral()
+    // mavenLocal()
+    // jcenter()
+    // mavenCentral()
+    // maven{ url 'https://oss.sonatype.org/content/repositories/snapshots/'}
+    maven{ url 'http://maven.aliyun.com/nexus/content/groups/public/'}
 }
 
 dependencies {
 
-    compile 'com.doopp:reactor-guice:0.0.7'
+    compile 'com.doopp:reactor-guice:0.0.9'
 
     // JSON
     compile 'com.google.code.gson:gson:2.8.5'
