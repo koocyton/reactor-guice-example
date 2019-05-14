@@ -1,4 +1,4 @@
-package com.doopp.gauss.app.utils;
+package com.doopp.gauss.oauth.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

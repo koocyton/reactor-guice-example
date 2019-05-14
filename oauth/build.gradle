@@ -14,7 +14,10 @@ repositories {
 
 dependencies {
 
-    compile 'com.doopp:reactor-guice:0.0.4'
+    compile 'com.doopp:reactor-guice:0.0.7'
+
+    // JSON
+    compile 'com.google.code.gson:gson:2.8.5'
 
     // database
     compile 'mysql:mysql-connector-java:6.0.6'
@@ -64,5 +67,4 @@ jar {
 task clear(type:Delete){
     delete 'build','target'
 }
-task release(type: Copy, dependsOn: [clear, jar]) {
-}
+task release(type: Copy, dependsOn: [clear, jar])
